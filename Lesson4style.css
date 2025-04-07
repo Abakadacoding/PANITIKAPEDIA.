@@ -1,0 +1,126 @@
+body {
+    background-image: url("/images/rebolusyong-pilipino-cry-of-balintawak-vicente-reyes.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.main-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+h1, h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    background-color: #e0f7fa;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+p {
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+    width: fit-content;
+    text-decoration: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpFooter 0.8s ease-out 0.3s forwards;
+}
+
+@keyframes fadeInUpFooter {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

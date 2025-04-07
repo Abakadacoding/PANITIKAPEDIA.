@@ -1,0 +1,124 @@
+body {
+    background-image: url("/images/rebolusyong-pilipino-cry-of-balintawak-vicente-reyes.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #007bff;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDownHeader 0.8s ease-out 0.1s forwards;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpMain 0.8s ease-out 0.3s forwards;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #007bff;
+}
+
+p {
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUpText 0.6s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+hr {
+    border: 1px solid #ddd;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+    animation-delay: 0.7s;
+}
+
+a {
+    display: block;
+    text-align: center;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpLink 0.8s ease-out 0.9s forwards;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInDownHeader {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUpMain {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUpText {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUpLink {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUpFooter 0.8s ease-out 1.1s forwards;
+}
+
+@keyframes fadeInUpFooter {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
